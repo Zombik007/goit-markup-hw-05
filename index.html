@@ -34,7 +34,9 @@
 
           <ul class="header-list">
             <li class="header-item">
-              <a class="current header-text header-nav-link" href="./index.html"
+              <a
+                class="current-link header-text header-nav-link"
+                href="./index.html"
                 >Студия</a
               >
             </li>
@@ -79,7 +81,9 @@
       <section class="hero">
         <div class="overlay">
           <h1 class="hero-caption">Эффективные решения для вашего бизнеса</h1>
-          <button class="hero-button" type="button">Заказать услугу</button>
+          <button class="hero-button" data-modal-open type="button">
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!-- /Секция "Герой" -->
@@ -154,6 +158,7 @@
                 alt="крупный план, программист работает за столом в офисе"
                 width="370"
               />
+              <p class="occupation-text">Десктопные приложения</p>
             </li>
             <li class="occupation-item">
               <img
@@ -162,6 +167,7 @@
                 alt="веб-дизайнеры пользовательского интерфейса разрабатывают приложения для смартфонов"
                 width="370"
               />
+              <p class="occupation-text">Мобильные приложения</p>
             </li>
             <li class="occupation-item">
               <img
@@ -170,6 +176,7 @@
                 alt="художник, веб-дизайнер с открытым приложением на планшете для выбора цветов"
                 width="370"
               />
+              <p class="occupation-text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -416,7 +423,7 @@
       <div class="container">
         <div class="footer-align">
           <div class="logo-address">
-            <a class="logo" href="">
+            <a class="logo" href="./index.html">
               <span class="logo-text logo-footer-web">Web</span
               ><span class="logo-text logo-footer-studio">Studio</span>
             </a>
@@ -485,5 +492,18 @@
       </div>
     </footer>
     <!-- /Подвал этой страницы -->
+
+    <!-- Модальное окно -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close-button" data-modal-close>
+          <svg class="modal-icon-close">
+            <use href="./icons/symbol-defs.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <!-- /Модальное окно -->
+    <script src="./js/modal.js"></script>
   </body>
 </html>
