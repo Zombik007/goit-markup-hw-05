@@ -799,7 +799,8 @@ button {
 }
 
 /* Эффекты блока который появляется над картинкой в карточках "Проекты" */
-.projects-item:hover .projects-overlay {
+.projects-item:hover .projects-overlay,
+.projects-item:focus .projects-overlay {
   transform: translateY(0);
 }
 
